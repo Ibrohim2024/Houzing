@@ -1,0 +1,291 @@
+footer {
+    background: rgb(13, 38, 59);
+    color: #fff;
+    height: 400px;
+}
+
+.footer1 span {
+    display: flex;
+    gap: 10px;
+}
+
+.footer1 p {
+    max-width: 256px;
+}
+
+.all-footer {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ffffff52;
+}
+
+.footer-out {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-out span {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-top: 20px;
+}
+
+.all-footer p {
+    color: rgba(255, 255, 255, 0.651);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+.row {
+    /* Color / 2 */
+    background: rgb(13, 38, 59);
+    height: 64px;
+    width: 100%;
+    color: #fff;
+}
+
+main {
+    margin-top: 30px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* ! Main */
+
+main {
+    width: 100%;
+    height: 708px;
+}
+
+main .login {
+    width: 580px;
+    height: 666px;
+    margin: 64px auto;
+    border: 1px solid rgb(230, 233, 236);
+    border-radius: 3px;
+    box-shadow: 0px 10px 30px 0px rgba(13, 38, 59, 0.05);
+    background: rgb(255, 255, 255);
+    padding: 24px 30px;
+}
+
+main .login form {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+main .login form h2 {
+    color: rgb(13, 38, 59);
+    font-family: "Montserrat";
+    font-size: 18px;
+    font-weight: 600;
+}
+
+main .login form .int {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgb(230, 233, 236);
+    padding: 5px 0;
+}
+
+main .login form .color {
+    color: rgb(105, 105, 105);
+}
+
+main .login form .btnr {
+    border: none;
+    padding: 12px 40px 12px 40px;
+    border-radius: 2px;
+    background: rgb(0, 97, 223);
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.nav-center ul li {
+    list-style: none;
+}
+
+.nav-center ul {
+    display: flex;
+    gap: 64px;
+    align-items: center;
+}
+
+
+.nav-center ul li a {
+    text-decoration: none;
+    color: #fff;
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.group {
+    position: relative;
+   }
+   
+   .input {
+    font-size: 16px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 200px;
+    border: none;
+    border-bottom: 1px solid #515151;
+    background: transparent;
+   }
+   
+   .input:focus {
+    outline: none;
+   }
+   
+   label {
+    color: #999;
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+   }
+   
+   .input:focus ~ label, .input:valid ~ label {
+    top: -20px;
+    font-size: 14px;
+    color: #5264AE;
+   }
+   
+   .bar {
+    position: relative;
+    display: block;
+    width: 200px;
+   }
+   
+   .bar:before, .bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #5264AE;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+   }
+   
+   .bar:before {
+    left: 50%;
+   }
+   
+   .bar:after {
+    right: 50%;
+   }
+   
+   .input:focus ~ .bar:before, .input:focus ~ .bar:after {
+    width: 50%;
+   }
+   
+   .highlight {
+    position: absolute;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+   }
+   
+   .input:focus ~ .highlight {
+    animation: inputHighlighter 0.3s ease;
+   }
+   
+   @keyframes inputHighlighter {
+    from {
+     background: #5264AE;
+    }
+   
+    to {
+     width: 0;
+     background: transparent;
+    }
+   }
+
+   .cssbuttons-io {
+    position: relative;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.05em;
+    border-radius: 0.8em;
+    cursor: pointer;
+    border: none;
+    background: linear-gradient(to right, #8e2de2, #4a00e0);
+    color: ghostwhite;
+    overflow: hidden;
+  }
+  
+  .cssbuttons-io svg {
+    width: 1.2em;
+    height: 1.2em;
+    margin-right: 0.5em;
+  }
+  
+  .cssbuttons-io span {
+    position: relative;
+    z-index: 10;
+    transition: color 0.4s;
+    display: inline-flex;
+    align-items: center;
+    padding: 0.8em 1.2em 0.8em 1.05em;
+  }
+  
+  .cssbuttons-io::before,
+  .cssbuttons-io::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+  
+  .cssbuttons-io::before {
+    content: "";
+    background: #000;
+    width: 120%;
+    left: -10%;
+    transform: skew(30deg);
+    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+  }
+  
+  .cssbuttons-io:hover::before {
+    transform: translate3d(100%, 0, 0);
+  }
+  
+  .cssbuttons-io:active {
+    transform: scale(0.95);
+  }
+  
